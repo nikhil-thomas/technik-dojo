@@ -1,0 +1,30 @@
+{
+  "name": "telegram-bot",
+  "version": "1.0.0",
+  "description": "backend server for telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhil-thomas/technik-dojo.git"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "nodejs"
+  ],
+  "author": "Nikhil Thomas <nikhilthomas1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhil-thomas/technik-dojo/issues"
+  },
+  "homepage": "https://github.com/nikhil-thomas/technik-dojo#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
