@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+            <div id="chat__input">
+                <span>Chat:&nbsp;</span>
+                <input id="message" type="text">
+                <button id="chat-send">send</button>
+            </div>
+            <div id="chat__output"></div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script>
+        const socket = io('http://localhost:3000/socket.io/');
+
+        socket.on("chat message", function(msg) {
+            outputBox = document.getElementById("chat__output");
+            outputBox.innerHTML += "<div>" + msg + "</div>";
+		})
+
+        chatBtn = document.getElementById("chat-send")
+        chatBtn.addEventListener('click', function(e) {
+            msg = document.getElementById("message").value;
+            if (msg === "") {
+                return;
+            }
+            document.getElementById("message").value = "";
+            socket.emit("chat message", msg);
+        })
+    </script>
+</body>
+</html>
