@@ -88,6 +88,5 @@ func main() {
 		rndNum := random(MIN, MAX)
 		fmt.Print(rndNum, " ")
 	}
-	fmt.Printf("\n\n")
-
+	fmt.Print("\n\n")
 }
