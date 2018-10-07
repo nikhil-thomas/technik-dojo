@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  branch = "master"
+  name = "github.com/Arafatk/glot"
+  packages = ["."]
+  revision = "79d5219000f05727de933dbd5259b4dce6aacbc0"
+
+[[projects]]
   name = "github.com/mattn/go-sqlite3"
   packages = ["."]
   revision = "25ecb14adfc7543176f7d85291ec7dba82c6f7e4"
@@ -10,6 +16,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d917c627ba7518d75a1389d3c4992d767045babdd915f091fc3350aedea8fc27"
+  inputs-digest = "9fa6f4dac2c598a8cc15c29d4a575e48b0fb521fdc2ca4ee4b1dc3277a1c89f1"
   solver-name = "gps-cdcl"
   solver-version = 1
