@@ -27,6 +27,7 @@
     "internal/sdkuri",
     "internal/shareddefaults",
     "private/protocol",
+    "private/protocol/ec2query",
     "private/protocol/eventstream",
     "private/protocol/eventstream/eventstreamapi",
     "private/protocol/json/jsonutil",
@@ -37,6 +38,7 @@
     "private/protocol/restxml",
     "private/protocol/xml/xmlutil",
     "service/dynamodb",
+    "service/ec2",
     "service/s3",
     "service/sts"
   ]
@@ -57,6 +59,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "10fd894e67cbc1a4214089e6253b079e4a26d7242bace44cb152074b4cae910e"
+  inputs-digest = "7edaa12f6e16f183b7e71e35a26b8358256884f93f7cbd56c315b02961fcacaf"
   solver-name = "gps-cdcl"
   solver-version = 1
