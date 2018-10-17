@@ -32,3 +32,7 @@
 [[constraint]]
   branch = "master"
   name = "github.com/Arafatk/glot"
+
+[[constraint]]
+  name = "github.com/pkg/profile"
+  version = "1.2.1"
