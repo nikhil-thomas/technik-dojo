@@ -40,6 +40,8 @@
     "service/dynamodb",
     "service/ec2",
     "service/s3",
+    "service/s3/s3iface",
+    "service/s3/s3manager",
     "service/sts"
   ]
   revision = "46fe04784968cd7b54e859fcce45753456f736ac"
@@ -59,6 +61,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "583b546f729479ea7465d6dc44fee42956cc7cb5f751f2eaa36e73c133dd7190"
+  inputs-digest = "65d8dbfc3e7c5d0e80cb470daa2913d2a42da907ed69deadd49596c88666285a"
   solver-name = "gps-cdcl"
   solver-version = 1
