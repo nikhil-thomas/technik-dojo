@@ -18,13 +18,17 @@ var (
 
 	// RestfulEPDefault specifies the default rest api end point
 	RestfulEPDefault = ":8080"
+
+	// RestfulTLSEPDefault specifies the default rest api end point
+	RestfulTLSEPDefault = ":9090"
 )
 
 // ServiceConfig describes service config
 type ServiceConfig struct {
-	DatabaseType     dblayer.DBTYPE `json:"databasetype"`
-	DBConnectionAddr string         `json:"dbconnectionaddr"`
-	RestfulEndPoint  string         `json:"restfulapi_endpoint"`
+	DatabaseType       dblayer.DBTYPE `json:"databasetype"`
+	DBConnectionAddr   string         `json:"dbconnectionaddr"`
+	RestfulEndPoint    string         `json:"restfulapi_endpoint"`
+	RestfulTLSEndPoint string         `json:"restfulapi-tlsendpoint"`
 }
 
 // ExtractConfiguration returns config
@@ -33,6 +37,7 @@ func ExtractConfiguration(filename string) (ServiceConfig, error) {
 		DBTypeDefault,
 		DBConnectionDefault,
 		RestfulEPDefault,
+		RestfulTLSEPDefault,
 	}
 	log.Println("filename:", filename)
 	file, err := os.Open(filename)

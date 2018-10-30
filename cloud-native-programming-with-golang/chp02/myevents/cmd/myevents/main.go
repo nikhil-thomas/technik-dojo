@@ -22,8 +22,12 @@ func main() {
 	if err != nil {
 		log.Fatalln("error in creating store:", err)
 	}
-	err = events.ServeAPI(config.RestfulEndPoint, store)
-	if err != nil {
-		log.Fatalln(err)
+	log.Println("store created successfully")
+	httpErrChan, httpsErrChan := events.ServeAPI(config.RestfulEndPoint, config.RestfulTLSEndPoint, store)
+	select {
+	case err := <-httpErrChan:
+		log.Fatalln("http error:", err)
+	case err := <-httpsErrChan:
+		log.Fatalln("https error:", err)
 	}
 }
