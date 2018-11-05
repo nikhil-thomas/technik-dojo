@@ -38,6 +38,12 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
+  name = "github.com/mitchellh/mapstructure"
+  packages = ["."]
+  revision = "3536a929edddb9a5b34bd6861dc4a9647cb459fe"
+  version = "v1.1.2"
+
+[[projects]]
   name = "github.com/pierrec/lz4"
   packages = [
     ".",
@@ -73,6 +79,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "4e4ab232d28ce5f942867d7891dbc308aba45477299a6cdfd261112e06afeb13"
+  inputs-digest = "e44f278acfb16c8ed1ebd9e1b36f8e06d311cab85be3b5b2aa4d1645b9d88d98"
   solver-name = "gps-cdcl"
   solver-version = 1

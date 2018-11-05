@@ -1,4 +1,4 @@
-package helper
+package amqphelper
 
 import (
 	"log"
