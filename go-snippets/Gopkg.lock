@@ -66,6 +66,12 @@
   revision = "04140366298a54a039076d798123ffa108fff46c"
 
 [[projects]]
+  name = "github.com/konsorten/go-windows-terminal-sequences"
+  packages = ["."]
+  revision = "5c8c8bd35d3832f5d134ae1e1e375b69a4d25242"
+  version = "v1.0.1"
+
+[[projects]]
   name = "github.com/mattn/go-sqlite3"
   packages = ["."]
   revision = "25ecb14adfc7543176f7d85291ec7dba82c6f7e4"
@@ -78,6 +84,12 @@
   version = "v0.8.0"
 
 [[projects]]
+  name = "github.com/sirupsen/logrus"
+  packages = ["."]
+  revision = "bcd833dfe83d3cebad139e4a29ed79cb2318bf95"
+  version = "v1.2.0"
+
+[[projects]]
   name = "github.com/urfave/negroni"
   packages = ["."]
   revision = "c6a59be0ce122566695fbd5e48a77f8f10c8a63a"
@@ -85,9 +97,17 @@
 
 [[projects]]
   branch = "master"
+  name = "golang.org/x/crypto"
+  packages = ["ssh/terminal"]
+  revision = "3d3f9f413869b949e48070b5bc593aa22cc2b8f2"
+
+[[projects]]
+  branch = "master"
   name = "golang.org/x/net"
   packages = [
     "context",
+    "html",
+    "html/atom",
     "http/httpguts",
     "http2",
     "http2/hpack",
@@ -100,7 +120,10 @@
 [[projects]]
   branch = "master"
   name = "golang.org/x/sys"
-  packages = ["unix"]
+  packages = [
+    "unix",
+    "windows"
+  ]
   revision = "62eef0e2fa9b2c385f7b2778e763486da6880d37"
 
 [[projects]]
@@ -166,6 +189,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "016487783a2ffc235b1188d566661233a8b2e240c1712394dc97175cb9c3747b"
+  inputs-digest = "caa97b7c96e0b9ea0227eac0d9294e288f5aecad6b354312b45107ba735180b2"
   solver-name = "gps-cdcl"
   solver-version = 1
