@@ -24,7 +24,7 @@ var _ = Resource("prism", func() {
 			Param("uuid_param", UUID, "UUID parameter")
 			Param("any_param", Any, "Any parameter")
 		})
-		Response(OK)
+		Response(OK, PrismMedia)
 	})
 	Action("create", func() {
 		Description("Action create accepts a payload with one member for each primitive type")
