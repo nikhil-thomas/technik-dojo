@@ -1,6 +1,8 @@
 package main
 
 import (
+	"database/sql"
+
 	"github.com/goadesign/goa"
 	"github.com/nikhil-thomas/technik-dojo/goa-exp/goa-url-shortner/app"
 )
@@ -8,11 +10,15 @@ import (
 // ShortnerController implements the shortner resource.
 type ShortnerController struct {
 	*goa.Controller
+	DB *sql.DB
 }
 
 // NewShortnerController creates a shortner controller.
-func NewShortnerController(service *goa.Service) *ShortnerController {
-	return &ShortnerController{Controller: service.NewController("ShortnerController")}
+func NewShortnerController(service *goa.Service, db *sql.DB) *ShortnerController {
+	return &ShortnerController{
+		Controller: service.NewController("ShortnerController"),
+		DB * sql.DB,
+	}
 }
 
 // Analytics runs the analytics action.
