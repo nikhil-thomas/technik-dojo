@@ -1,0 +1,541 @@
+consumes:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+definitions:
+  CreateArrayPrismPayload:
+    example:
+      any_array:
+      - false
+      - false
+      bool_array:
+      - false
+      date_time_array:
+      - "1974-08-10T06:52:57Z"
+      int_array:
+      - 1.136086795579006e+18
+      - 1.136086795579006e+18
+      num_array:
+      - 0.6227009521813938
+      - 0.6227009521813938
+      - 0.6227009521813938
+      string_array:
+      - Est id et repellendus veniam animi.
+      uuid_array:
+      - e6101969-2824-410e-b77a-6ac0257572b5
+      - e6101969-2824-410e-b77a-6ac0257572b5
+    properties:
+      any_array:
+        description: Any array member
+        example:
+        - false
+        - false
+        items:
+          example: false
+        type: array
+      bool_array:
+        description: Boolean array member
+        example:
+        - false
+        items:
+          example: false
+          type: boolean
+        type: array
+      date_time_array:
+        description: DateTime array member
+        example:
+        - "1974-08-10T06:52:57Z"
+        items:
+          example: "1974-08-10T06:52:57Z"
+          format: date-time
+          type: string
+        type: array
+      int_array:
+        description: Integer array member
+        example:
+        - 1.136086795579006e+18
+        - 1.136086795579006e+18
+        items:
+          example: 1.136086795579006e+18
+          format: int64
+          type: integer
+        type: array
+      num_array:
+        description: Number array member
+        example:
+        - 0.6227009521813938
+        - 0.6227009521813938
+        - 0.6227009521813938
+        items:
+          example: 0.6227009521813938
+          format: double
+          type: number
+        type: array
+      string_array:
+        description: String array member
+        example:
+        - Est id et repellendus veniam animi.
+        items:
+          example: Est id et repellendus veniam animi.
+          type: string
+        type: array
+      uuid_array:
+        description: UUID array member
+        example:
+        - e6101969-2824-410e-b77a-6ac0257572b5
+        - e6101969-2824-410e-b77a-6ac0257572b5
+        items:
+          example: e6101969-2824-410e-b77a-6ac0257572b5
+          format: uuid
+          type: string
+        type: array
+    title: CreateArrayPrismPayload
+    type: object
+  CreateHashPrismPayload:
+    example:
+      any_val_hash:
+        Ullam in.: 0.6219942009142099
+      bool_val_hash:
+        Et nostrum facilis velit maiores alias.: false
+      data_time_val_hash:
+        Atque sit minima repellendus et blanditiis velit.: "2005-04-06T03:53:53Z"
+      int_val_hash:
+        Enim consequatur.: 5.279223279295463e+18
+      num_val_hash:
+        Quis dignissimos dolore adipisci asperiores.: 0.10033032330789023
+      string_val_hash:
+        Qui ea delectus fugiat fuga et quae.: Est natus impedit.
+      uuid_val_hash:
+        Dolorem cumque quam et aspernatur qui.: 5d560031-c4fb-47de-a3e2-174b393d1a39
+    properties:
+      any_val_hash:
+        additionalProperties: true
+        description: Hash with Any value member
+        example:
+          Ullam in.: 0.6219942009142099
+        type: object
+      bool_val_hash:
+        additionalProperties: true
+        description: Hash with Boolean value member
+        example:
+          Et nostrum facilis velit maiores alias.: false
+        type: object
+      data_time_val_hash:
+        additionalProperties: true
+        description: Hash with DateTime value member
+        example:
+          Atque sit minima repellendus et blanditiis velit.: "2005-04-06T03:53:53Z"
+        type: object
+      int_val_hash:
+        additionalProperties: true
+        description: Hash with Integer value member
+        example:
+          Enim consequatur.: 5.279223279295463e+18
+        type: object
+      num_val_hash:
+        additionalProperties: true
+        description: Hash with Number value member
+        example:
+          Quis dignissimos dolore adipisci asperiores.: 0.10033032330789023
+        type: object
+      string_val_hash:
+        additionalProperties: true
+        description: Hash with String value member
+        example:
+          Qui ea delectus fugiat fuga et quae.: Est natus impedit.
+        type: object
+      uuid_val_hash:
+        additionalProperties: true
+        description: Hash with UUID value member
+        example:
+          Dolorem cumque quam et aspernatur qui.: 5d560031-c4fb-47de-a3e2-174b393d1a39
+        type: object
+    title: CreateHashPrismPayload
+    type: object
+  CreatePrismPayload:
+    example:
+      any_member: 31d03e98-700c-4afc-9676-5912e9b5ff5c
+      bool_member: true
+      date_time_member: "1992-08-22T12:28:46Z"
+      int_member: 8.510789536521976e+18
+      num_member: 0.496138932327182
+      string_member: Quidem et autem officia rerum fugiat.
+      uuid_member: e8031a12-f034-4f6b-86ee-2d6cff2ddbad
+    properties:
+      any_member:
+        description: Any member
+        example: 31d03e98-700c-4afc-9676-5912e9b5ff5c
+      bool_member:
+        description: Boolean member
+        example: true
+        type: boolean
+      date_time_member:
+        description: DateTime member
+        example: "1992-08-22T12:28:46Z"
+        format: date-time
+        type: string
+      int_member:
+        description: Integer member
+        example: 8.510789536521976e+18
+        format: int64
+        type: integer
+      num_member:
+        description: Number member
+        example: 0.496138932327182
+        format: double
+        type: number
+      string_member:
+        description: String member
+        example: Quidem et autem officia rerum fugiat.
+        type: string
+      uuid_member:
+        description: UUID member
+        example: e8031a12-f034-4f6b-86ee-2d6cff2ddbad
+        format: uuid
+        type: string
+    title: CreatePrismPayload
+    type: object
+  GoadesignExamplesArrayprism:
+    description: ArrayPrismMedia is a media type with one attribute per primitive
+      type (default view)
+    example:
+      any_att: 3.3976259135379526e+17
+      bool_att: true
+      date_time_att: "1989-05-21T06:14:59Z"
+      int_att: 4.1627752415585587e+18
+      num_att: 0.35104707234450405
+      string_att: Aut officiis id nihil.
+      uuid_att: eb6e95ea-bd3c-4d91-a3e2-8cade60b5f5e
+    properties:
+      any_att:
+        description: Any attribute
+        example: 3.3976259135379526e+17
+      bool_att:
+        description: Boolean attribute
+        example: true
+        type: boolean
+      date_time_att:
+        description: DateTime attribute
+        example: "1989-05-21T06:14:59Z"
+        format: date-time
+        type: string
+      int_att:
+        description: Integer attribute
+        example: 4.1627752415585587e+18
+        format: int64
+        type: integer
+      num_att:
+        description: Number attribute
+        example: 0.35104707234450405
+        format: double
+        type: number
+      string_att:
+        description: String attribute
+        example: Aut officiis id nihil.
+        type: string
+      uuid_att:
+        description: UUID attribute
+        example: eb6e95ea-bd3c-4d91-a3e2-8cade60b5f5e
+        format: uuid
+        type: string
+    title: 'Mediatype identifier: application/vnd.goadesign.examples.arrayprism; view=default'
+    type: object
+  GoadesignExamplesHashprism:
+    description: 'HashPrismMedia is a media type with one hash member per primitive
+      type: type as value, and string as key (default view)'
+    example:
+      any_val_hash:
+        Rerum ipsa voluptatibus laborum.: false
+      bool_val_hash:
+        Aut minima qui et animi sunt.: true
+      date_time_val_hash:
+        Expedita sit.: "1976-05-28T16:30:19Z"
+      int_val_hash:
+        Minus minima doloribus impedit voluptatem.: 5.619270583632048e+18
+      num_val_hash:
+        Omnis sunt sunt tempora quia.: 0.668276823525797
+      string_val_hash:
+        Quisquam iusto et.: Assumenda ad laboriosam nihil aliquam consequatur.
+      uuid_val_hash:
+        Tenetur et consequatur distinctio eaque quam ipsa.: 1787ad8b-0ec4-474a-8a0e-e1da2cf6ad06
+    properties:
+      any_val_hash:
+        additionalProperties: true
+        description: Hash with Any value member
+        example:
+          Rerum ipsa voluptatibus laborum.: false
+        type: object
+      bool_val_hash:
+        additionalProperties: true
+        description: Hash with Boolean value member
+        example:
+          Aut minima qui et animi sunt.: true
+        type: object
+      date_time_val_hash:
+        additionalProperties: true
+        description: Hash with DateTime value member
+        example:
+          Expedita sit.: "1976-05-28T16:30:19Z"
+        type: object
+      int_val_hash:
+        additionalProperties: true
+        description: Hash with Integer value member
+        example:
+          Minus minima doloribus impedit voluptatem.: 5.619270583632048e+18
+        type: object
+      num_val_hash:
+        additionalProperties: true
+        description: Hash with Number value member
+        example:
+          Omnis sunt sunt tempora quia.: 0.668276823525797
+        type: object
+      string_val_hash:
+        additionalProperties: true
+        description: Hash with String value member
+        example:
+          Quisquam iusto et.: Assumenda ad laboriosam nihil aliquam consequatur.
+        type: object
+      uuid_val_hash:
+        additionalProperties: true
+        description: Hash with UUID value member
+        example:
+          Tenetur et consequatur distinctio eaque quam ipsa.: 1787ad8b-0ec4-474a-8a0e-e1da2cf6ad06
+        type: object
+    title: 'Mediatype identifier: application/vnd.goadesign.examples.hashprism; view=default'
+    type: object
+  GoadesignExamplesPrism:
+    description: Prism media is a media type with ie attribute per primitive type
+      (default view)
+    example:
+      any_att: "1986-07-18T12:19:22Z"
+      bool_att: false
+      date_time_att: "1977-04-16T04:52:14Z"
+      int_att: 4.2395324077203077e+18
+      num_att: 0.6214015185473186
+      string_att: Eaque sit sed.
+      uuid_att: 6f1db092-46bd-4030-97fc-d521d551d577
+    properties:
+      any_att:
+        description: Any attribute
+        example: "1986-07-18T12:19:22Z"
+      bool_att:
+        description: Boolean attribute
+        example: false
+        type: boolean
+      date_time_att:
+        description: DateTime attribute
+        example: "1977-04-16T04:52:14Z"
+        format: date-time
+        type: string
+      int_att:
+        description: Integer attribute
+        example: 4.2395324077203077e+18
+        format: int64
+        type: integer
+      num_att:
+        description: Number attribute
+        example: 0.6214015185473186
+        format: double
+        type: number
+      string_att:
+        description: String attribute
+        example: Eaque sit sed.
+        type: string
+      uuid_att:
+        description: UUID attribute
+        example: 6f1db092-46bd-4030-97fc-d521d551d577
+        format: uuid
+        type: string
+    title: 'Mediatype identifier: application/vnd.goadesign.examples.prism; view=default'
+    type: object
+host: localhost
+info:
+  description: Fake API ti showcase the types of DSL
+  version: ""
+paths:
+  /:
+    get:
+      description: Action show accepts one querystring param for each primitive type
+      operationId: prism#show
+      parameters:
+      - description: Any parameter
+        in: query
+        name: any_param
+        required: false
+        type: any
+      - description: Boolean parameter
+        in: query
+        name: bool_param
+        required: false
+        type: boolean
+      - description: DateTime parameter
+        in: query
+        name: date_time_param
+        required: false
+        type: string
+      - description: Integer parameter
+        in: query
+        name: int_param
+        required: false
+        type: integer
+      - description: Number parameter
+        in: query
+        name: num_param
+        required: false
+        type: number
+      - description: String parameter
+        in: query
+        name: string_param
+        required: false
+        type: string
+      - description: UUID parameter
+        in: query
+        name: uuid_param
+        required: false
+        type: string
+      produces:
+      - application/vnd.goadesign.examples.prism
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/GoadesignExamplesPrism'
+      summary: show prism
+      tags:
+      - prism
+    post:
+      description: Action create accepts a payload with one member for each primitive
+        type
+      operationId: prism#create
+      parameters:
+      - in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/CreatePrismPayload'
+      summary: create prism
+      tags:
+      - prism
+  /array:
+    get:
+      description: |
+        Action accepts one queerystring array parameter for each primitive type.Description
+        Array parameters are constructed using all the values given to the same querstring key. e.g:
+
+            GET /array?uint_param=1&int_param=2
+      operationId: array_prism#show
+      parameters:
+      - collectionFormat: multi
+        description: Any array parameter
+        in: query
+        items:
+          type: any
+        name: any_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: Boolean array parameter
+        in: query
+        items:
+          type: boolean
+        name: bool_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: DateTime array parameter
+        in: query
+        items:
+          type: string
+        name: date_time_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: Integer array parameter
+        in: query
+        items:
+          type: integer
+        name: int_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: Number array parameter
+        in: query
+        items:
+          type: number
+        name: num_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: String array parameter
+        in: query
+        items:
+          type: string
+        name: string_array
+        required: false
+        type: array
+      - collectionFormat: multi
+        description: UUID array parameter
+        in: query
+        items:
+          type: string
+        name: uuid_array
+        required: false
+        type: array
+      produces:
+      - application/vnd.goadesign.examples.arrayprism
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/GoadesignExamplesArrayprism'
+      summary: show array_prism
+      tags:
+      - array_prism
+    post:
+      description: Action create accepts a payload with one array member of each primitive
+        type
+      operationId: array_prism#create
+      parameters:
+      - in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/CreateArrayPrismPayload'
+      summary: create array_prism
+      tags:
+      - array_prism
+  /hash:
+    get:
+      description: Action show returns a media type with one hash memmerb per primitive
+        type, each using the primitive type as value and as a key
+      operationId: hash_prism#show
+      produces:
+      - application/vnd.goadesign.examples.hashprism
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/GoadesignExamplesHashprism'
+      summary: show hash_prism
+      tags:
+      - hash_prism
+    post:
+      description: Action create acepts a payload with one hash member per primitive
+        type, each using the type as value and String as key
+      operationId: hash_prism#create
+      parameters:
+      - in: body
+        name: payload
+        required: true
+        schema:
+          $ref: '#/definitions/CreateHashPrismPayload'
+      summary: create hash_prism
+      tags:
+      - hash_prism
+produces:
+- application/json
+- application/xml
+- application/gob
+- application/x-gob
+swagger: "2.0"

@@ -5,11 +5,6 @@ import (
 	. "github.com/goadesign/goa/design/apidsl"
 )
 
-var _ = API("types", func() {
-	Description("Fake API ti showcase the types of DSL")
-	Host("localhost")
-})
-
 var _ = Resource("prism", func() {
 	Description("Resource prism contains artificial actions which use primitive types in DSL")
 	Action("show", func() {
