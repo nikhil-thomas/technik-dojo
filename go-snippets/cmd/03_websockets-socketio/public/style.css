@@ -1,0 +1,39 @@
+html, body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+
+#container {
+    position: relative;
+    border: 1px solid blue;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#chat__input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1rem;
+    left: 1rem;
+    height: 4rem;
+    width: 100%;
+    padding-left: 1rem;
+    border: 1px solid blue;
+}
+
+#chat__output {
+    position: absolute;
+    top: 5rem;
+    left: 1rem;
+    min-height: 4rem;
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid blue;
+}
