@@ -5,6 +5,8 @@ import (
 	"log"
 	"os"
 	"sync"
+
+	"golang.org/x/time/rate"
 )
 
 func main() {
@@ -41,16 +43,22 @@ func main() {
 }
 
 // APIConnection defines an API connection struct
-type APIConnection struct{}
+type APIConnection struct {
+	rateLimiter *rate.Limiter
+}
 
 // Open represents a new API connection
 func Open() *APIConnection {
-	return &APIConnection{}
+	return &APIConnection{
+		rateLimiter: rate.NewLimiter(rate.Limit(1), 1),
+	}
 }
 
 // ReadFiles represents reading files
 func (a *APIConnection) ReadFiles(ctx context.Context) error {
-
+	if err := a.rateLimiter.Wait(ctx); err != nil {
+		return err
+	}
 	// Pretend we do work here
 
 	return nil
@@ -58,7 +66,9 @@ func (a *APIConnection) ReadFiles(ctx context.Context) error {
 
 // ResolveAddress represents resolving address
 func (a *APIConnection) ResolveAddress(ctx context.Context) error {
-
+	if err := a.rateLimiter.Wait(ctx); err != nil {
+		return nil
+	}
 	// Pretend we do work here
 
 	return nil
