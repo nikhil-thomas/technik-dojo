@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  result-service
+  labels:
+    name: result-service
+    app: demo-voting-app
+spec:
+  selector:
+    app:  demo-voting-app
+    name: result-app-pod
+  ports:
+  - port:  80
+    targetPort: 80
+  type: LoadBalancer
