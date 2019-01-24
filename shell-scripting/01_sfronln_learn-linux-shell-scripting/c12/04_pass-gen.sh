@@ -23,5 +23,5 @@ if [[ ! ${length} =~ ^[[:digit:]]+$ ]]; then
 fi
 
 password=$(tr -dc '[A-Za-z0-1]' < /dev/urandom | head -c ${length})
-printf "\npassword : %s\n" ${password}
+printf "\npassword : %s\n\n" ${password}
 
